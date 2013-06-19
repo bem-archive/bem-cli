@@ -21,5 +21,6 @@
         "resolve" : "*"
     },
     "author": "Mikhail Davydov <azproduction@yandex-team.ru>",
-    "license": "MIT"
+    "license": "MIT",
+    "preferGlobal": true
 }
