@@ -19,7 +19,7 @@ var variants = [{
 variants.some(function (variant) {
     var path;
 
-    // try to find command
+    // try to find module
     try {
         path = resolve(variant.module, {
             basedir: basedir
