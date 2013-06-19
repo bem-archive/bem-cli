@@ -20,7 +20,7 @@
     "dependencies" : {
         "resolve" : "*"
     },
-    "author": "Mikhail Davydov <azproduction@yandex-team.ru>",
+    "author": "Mikhail Davydov <i@azproduction.ru>",
     "license": "MIT",
     "preferGlobal": true
 }
