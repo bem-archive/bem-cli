@@ -1,0 +1,25 @@
+{
+    "name": "bem-cli",
+    "version": "1.0.0",
+    "description": "bem runner",
+    "main": "index.js",
+    "bin": {
+        "bem": "./bin/bem"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.yandex-team.ru:azproduction/bem-cli.git"
+    },
+    "keywords": [
+        "bem",
+        "cli",
+        "runner",
+        "tool",
+        "helper"
+    ],
+    "dependencies" : {
+        "resolve" : "*"
+    },
+    "author": "Mikhail Davydov <azproduction@yandex-team.ru>",
+    "license": "MIT"
+}

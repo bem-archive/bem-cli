@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+var resolve = require('resolve').sync;
+
+var basedir = process.cwd();
+
+var variants = [{
+    module: 'bem/lib/coa',
+    method: 'run'
+}, {
+    module: 'bem/lib/bem',
+    method: 'main'
+}];
+
+variants.some(function (variant) {
+    var path;
+
+    // try to find command
+    try {
+        path = resolve(variant.module, {
+            basedir: basedir
+        });
+    } catch (e) {
+        return false;
+    }
+
+    // execute command
+    require(path)[variant.method]();
+    return true;
+});
