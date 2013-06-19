@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-var resolve = require('resolve').sync;
+var resolve = require('resolve').sync,
+    path = require('path');
 
 var basedir = process.cwd();
 
@@ -10,6 +11,9 @@ var variants = [{
 }, {
     module: 'bem/lib/bem',
     method: 'main'
+}, {
+   module: path.resolve(__dirname, '../lib/error'),
+   method: 'error'
 }];
 
 variants.some(function (variant) {
