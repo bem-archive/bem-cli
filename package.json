@@ -1,8 +1,7 @@
 {
     "name": "bem-cli",
     "version": "1.0.1",
-    "description": "bem runner",
-    "main": "index.js",
+    "description": "Runner for localy installed bem",
     "bin": {
         "bem": "./bin/bem"
     },
