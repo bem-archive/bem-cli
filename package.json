@@ -1,25 +1,25 @@
 {
-    "name": "bem-cli",
-    "version": "1.0.1",
-    "description": "Runner for localy installed bem",
-    "bin": {
-        "bem": "./bin/bem"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/bem/bem-cli.git"
-    },
-    "keywords": [
-        "bem",
-        "cli",
-        "runner",
-        "tool",
-        "helper"
-    ],
-    "dependencies" : {
-        "resolve" : "*"
-    },
-    "author": "Mikhail Davydov <i@azproduction.ru>",
-    "license": "MIT",
-    "preferGlobal": true
+  "name": "bem-cli",
+  "version": "1.1.0",
+  "description": "Runner for localy installed bem",
+  "bin": {
+    "bem": "./bin/bem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bem/bem-cli.git"
+  },
+  "keywords": [
+    "bem",
+    "cli",
+    "runner",
+    "tool",
+    "helper"
+  ],
+  "dependencies": {
+    "resolve": "*"
+  },
+  "author": "Mikhail Davydov <i@azproduction.ru>",
+  "license": "MIT",
+  "preferGlobal": true
 }
