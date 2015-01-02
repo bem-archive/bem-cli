@@ -12,6 +12,9 @@ var variants = [{
     module: 'bem/lib/bem',
     method: 'main'
 }, {
+    module: 'enb/bin/enb',
+    method: null
+}, {
    module: path.resolve(__dirname, '../lib/error'),
    method: 'error'
 }];
@@ -29,6 +32,10 @@ variants.some(function (variant) {
     }
 
     // execute command
-    require(path)[variant.method]();
+    if (variant.method) {
+        require(path)[variant.method]();
+    } else {
+        require(path);
+    }
     return true;
 });
